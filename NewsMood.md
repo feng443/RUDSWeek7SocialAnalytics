@@ -179,7 +179,7 @@ df.head()
 
 
 ```python
-df.to_csv('NewsMode.csv')
+df.to_csv('NewsMood.csv')
 ```
 
 ### Sentiment Scater Plot
@@ -209,7 +209,7 @@ plt.gca().invert_xaxis()
 plt.title(f'Sentiment Analysis of Media Tweets ({TODAY})\n', fontsize=20)
 plt.xlabel('Tweets Ago')
 plt.ylabel('Tweet Polarity')
-plt.savefig('NewsMode_scatter.png', bbox_inches='tight')
+plt.savefig('NewsMood_scatter.png', bbox_inches='tight')
 plt.show()
 ```
 
