@@ -147,7 +147,7 @@ class PlotBot(object):
         )
         plt.title(f'Sentiments Analysis of Tweets ({TODAY}), requested by {requester}',
                   fontsize=16)
-        plt.gca().invert_xaxis()
+        #plt.gca().invert_xaxis()
 
         plt.savefig('plot_bot.png', bbox_inches='tight')
 
