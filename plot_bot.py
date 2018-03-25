@@ -14,7 +14,8 @@ import schedule
 
 # Numpy, Pandas and PyPlot
 import pandas as pd
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt, use
+use('Agg') # Try to get around with issue with TK error in Heroku
 import seaborn as sns
 
 sns.set()
