@@ -14,6 +14,7 @@ import schedule
 
 # Numpy, Pandas and PyPlot
 # Stack overflow: https://github.com/matplotlib/matplotlib/issues/9017
+import pandas as pd
 import matplotlib
 matplotlib.use('agg')   # Try to get around with issue with TK error in Heroku
 import matplotlib.pyplot as plt
