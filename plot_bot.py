@@ -147,11 +147,9 @@ class PlotBot(object):
         )
         plt.title(f'Sentiments Analysis of Tweets ({TODAY}), requested by {requester}',
                   fontsize=16)
-        plt.ylabel('Tweet Polarity')
         plt.gca().invert_xaxis()
 
         plt.savefig('plot_bot.png', bbox_inches='tight')
-        #plt.show()
 
     def _tweet_out(self, target, requester):
         self.logger.info(f'Tweet out  ...{target}')
