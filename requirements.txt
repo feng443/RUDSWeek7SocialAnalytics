@@ -1,2 +1,5 @@
-tweepy==3.6.0
-schedule==0.5.0
+pandas
+matplotlib
+seaborn
+tweepy
+schedule
