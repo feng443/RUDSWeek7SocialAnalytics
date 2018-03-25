@@ -40,7 +40,7 @@ from twitter_config import *
 
 SLEEP_SEC = 60 * 5
 PAGE_SIZE = 20
-PAGES = 1
+PAGES = 25
 TODAY = date.today().strftime('%m/%d/%y')
 
 _AUTH = tweepy.OAuthHandler(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET)
