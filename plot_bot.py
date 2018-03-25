@@ -77,7 +77,7 @@ class PlotBot(object):
 
     def __init__(self, debug=False, log_file=None,
                  ignore_old=True):
-        self._re = re.compile('Analyze: @(\w{1,15})')
+        self._re = re.compile('Analyze:\s*@(\w{1,15})')
         self._debug = debug
         self._log_file = log_file
         self._ignore_old = ignore_old
