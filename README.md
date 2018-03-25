@@ -19,7 +19,6 @@ matplotlib.use('agg')   # Try to get around with issue with TK error in Heroku
 * [plot_bot.py](plot_bot.py) - The main Python code file
 * [requirements.txt](requirements.txt) - Required modules when deploying to Heroku
 * [Procfile](Procfile) - Heroku Procfile
-* [plot_bot.png](plot_bot.png) - Sample plot
 
 I used following commands to deploy the code to Heroku:
 
