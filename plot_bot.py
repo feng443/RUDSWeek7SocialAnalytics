@@ -165,7 +165,7 @@ class PlotBot(object):
 def main():
     print('Starting PlotBot...')
     schedule.clear()
-    bot = PlotBot(debug=DEBUG, log_file=LOG_FILE, ignore_old=True)
+    bot = PlotBot(debug=DEBUG, log_file=LOG_FILE, ignore_old=False)
     schedule.every(SLEEP_SEC).seconds.do(bot.listen)
     while True:
         schedule.run_pending()
