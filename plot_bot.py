@@ -38,8 +38,8 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 # Own
 from twitter_config import *
 
-SLEEP_SEC = 60 * 1
-PAGE_SIZE = 2
+SLEEP_SEC = 60 * 5
+PAGE_SIZE = 20
 PAGES = 1
 TODAY = date.today().strftime('%m/%d/%y')
 
@@ -50,7 +50,6 @@ TWITTER_API = tweepy.API(_AUTH, parser=tweepy.parsers.JSONParser())
 SENTIMENT_ANALYZER = SentimentIntensityAnalyzer()
 
 TWEET_FROM = '@feng443'
-TWEET_TO = 'PlotBot5'
 
 DEBUG = True
 LOG_FILE = 'PlotBot.log'
@@ -146,7 +145,7 @@ class PlotBot(object):
             title='Tweets',
             bbox_to_anchor=(1.25, 1)
         )
-        plt.title(f'Sentiments Analysis of Tweet ({TODAY}), requeted by {requester}',
+        plt.title(f'Sentiments Analysis of Tweets ({TODAY}), requested by {requester}',
                   fontsize=16)
         plt.ylabel('Tweet Polarity')
         plt.gca().invert_xaxis()
@@ -157,7 +156,7 @@ class PlotBot(object):
     def _tweet_out(self, target, requester):
         self.logger.info(f'Tweet out  ...{target}')
         TWITTER_API.update_with_media('plot_bot.png',
-                                      f'@{requester} Sentiment Analsyis of Tweets ({TODAY}), requested by {requester}')
+                                      f'Sentiment Analysis of Tweets ({TODAY}), requested by {requester}')
 
     def listen(self):
         self._scan_tweets()
