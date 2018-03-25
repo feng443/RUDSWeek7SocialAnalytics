@@ -50,7 +50,7 @@ TWITTER_API = tweepy.API(_AUTH, parser=tweepy.parsers.JSONParser())
 SENTIMENT_ANALYZER = SentimentIntensityAnalyzer()
 
 TWEET_FROM = '@feng443'
-TWEET_TO = 'chanfengcom'
+TWEET_TO = 'PlotBot5'
 
 DEBUG = True
 LOG_FILE = 'PlotBot.log'
