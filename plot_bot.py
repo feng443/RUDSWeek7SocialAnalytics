@@ -13,9 +13,10 @@ logging.basicConfig(
 import schedule
 
 # Numpy, Pandas and PyPlot
-import pandas as pd
-from matplotlib import pyplot as plt, use
-use('Agg') # Try to get around with issue with TK error in Heroku
+import matplotlib
+matplotlib.use('agg')   # Try to get around with issue with TK error in Heroku
+import matplotlib.pyplot as plt
+
 import seaborn as sns
 
 sns.set()
